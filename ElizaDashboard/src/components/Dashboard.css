@@ -1,0 +1,283 @@
+/* Main Layout */
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f7f7f7;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+    height: 100%; /* Ensure the full viewport height is covered */
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  /* Full Height Layout */
+  .full-height {
+    height: 100vh; /* Use the full height of the viewport */
+  }
+  
+  /* Main Content */
+  .flex-grow {
+    flex-grow: 1; /* Allow sections to take up remaining space */
+  }
+  
+  /* Header */
+  header{
+    align-items: center;
+    text-align: center;
+  }
+  .bg-gray-800 {
+    background-color: #2e1e77;
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .p-8 {
+    padding: 2rem;
+  }
+  
+  .text-4xl {
+    font-size: 2.25rem;
+    text-align: center;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  /* Grid System */
+  .grid {
+    display: grid;
+    width: 100%; /* Ensure the grid takes up the full width */
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+  @media (min-width: 640px) {
+    .sm\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  
+  .gap-8 {
+    gap: 2rem;
+  }
+  
+  .mt-8 {
+    margin-top: 2rem;
+  }
+  
+  /* Card Styles */
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .shadow-xl {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .hover\:shadow-2xl:hover {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transition-shadow {
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .duration-300 {
+    transition-duration: 300ms;
+  }
+  
+  .transform {
+    transform: scale(1);
+  }
+  
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+  
+  .max-w-xs {
+    max-width: 20rem;
+  }
+  
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Card Content */
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .text-gray-800 {
+    color: #2d3748;
+  }
+  
+  .text-gray-600 {
+    color: #718096;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Buttons */
+  .bg-blue-600 {
+    background-color: #3182ce;
+  }
+  
+  .bg-green-600 {
+    background-color: #3182ce;
+  }
+  
+  .bg-orange-600 {
+    background-color:#3182ce;
+  }
+  
+  .bg-purple-600 {
+    background-color: #3182ce;
+  }
+  
+  .bg-teal-600 {
+    background-color: #3182ce;
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .hover\:bg-blue-700:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .hover\:bg-green-700:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .hover\:bg-orange-700:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .hover\:bg-purple-700:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .hover\:bg-teal-700:hover {
+    background-color:#2b6cb0;
+  }
+  
+  .transition-colors {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Footer */
+  .bg-gray-800 {
+    background-color: #2d3748;
+  }
+  
+  .p-6 {
+    padding: 1.5rem;
+  }
+  
+  .mt-8 {
+    margin-top: 2rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  /* Full-Screen Footer */
+  footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 640px) {
+    .text-4xl {
+      font-size: 1.5rem;
+    }
+  
+    .text-3xl {
+      font-size: 1.5rem;
+    }
+  }
+  
